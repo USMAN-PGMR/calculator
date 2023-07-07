@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5" style="text-shadow: 2px 3px 3px ">Calculator</h1>
+        <div class="calculator shadow">
+            <input type="text" class="form-control" id="result" readonly>
+            <div class="buttons">
+                <button class="btn btn-secondary" onclick="clearResult()">C</button>
+                <button class="btn btn-secondary" onclick="deleteLastCharacter()">&#9003;</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('/')" value="/">/</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('7')" value="7">7</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('8')" value="8">8</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('9')" value="9">9</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('*')" value="*">*</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('4')" value="4">4</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('5')" value="5">5</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('6')" value="6">6</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('-')" value="-">-</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('1')" value="1">1</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('2')" value="2">2</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('3')" value="3">3</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('+')" value="+">+</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('0')" value="0">0</button>
+                <button class="btn btn-secondary" onclick="appendCharacter('.')" value=".">.</button>
+                <button class="btn btn-primary equal" onclick="calculateResult()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

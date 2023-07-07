@@ -1,0 +1,30 @@
+.calculator {
+    margin-top: 50px;
+    max-width: 400px;
+    /* max-height: 00px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+button {
+    width: 100%;
+}
+.equal{
+    grid-column: span 3;
+}
